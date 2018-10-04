@@ -24,7 +24,7 @@ public class JapanController {
 	}
 	
 	@RequestMapping(value="/japan/{jpnum}", method=RequestMethod.DELETE)
-	public @ResponseBody String deleteJapan(@PathVariable int jpnum) {
+	public @ResponseBody String deleteJapan(@PathVariable int jpnum) { 
 		return jdao.deleteJapan(jpnum) + "";
 	}
 }
